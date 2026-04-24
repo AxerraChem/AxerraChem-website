@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Value — Axerra Chemical</title>
+
+  <!-- Google Fonts -->
+  <link href="css/fonts.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface-variant": "#bfc7d1",
+            "on-primary": "#00363f",
+            "secondary-fixed": "#c9e7f7",
+            "surface-container-high": "#242b31",
+            "surface-bright": "#333a41",
+            "surface-variant": "#2f363c",
+            "primary-fixed-dim": "#00daf8",
+            "on-background": "#dce3ec",
+            "surface-container-low": "#151c23",
+            "primary-container": "#007d8f",
+            "on-tertiary-container": "#fff5eb",
+            "on-surface": "#dce3ec",
+            "inverse-primary": "#006877",
+            "error": "#ffb4ab",
+            "tertiary": "#ffba38",
+            "surface-container-lowest": "#080f15",
+            "on-tertiary": "#432c00",
+            "secondary": "#adcbda",
+            "error-container": "#93000a",
+            "outline-variant": "#404850",
+            "secondary-container": "#304d5a",
+            "primary": "#00daf8",
+            "surface-dim": "#0d141a",
+            "outline": "#8a919b",
+            "on-secondary-container": "#9fbdcc",
+            "surface-container-highest": "#2f363c",
+            "surface": "#0d141a",
+            "on-primary-container": "#e9faff",
+            "on-error": "#690005",
+            "on-secondary": "#163440",
+            "surface-tint": "#00daf8",
+            "surface-container": "#192027",
+            "background": "#0d141a",
+            "tertiary-container": "#976800"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Newsreader"],
+            label: ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-primary/30">
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 w-full z-50 bg-[#0d141a]/80 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-10 w-auto" style="mix-blend-mode:screen;filter:invert(1);"/>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">What We Do</a>
+
+      <!-- Solutions dropdown -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">
+          Our Solutions
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="Our_Products.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Products</a>
+          <a href="How_We_Engage.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">How We Engage</a>
+        </div>
+      </div>
+
+      <!-- Value dropdown — active -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-cyan-400 border-b-2 border-cyan-400 pb-0.5 transition-colors duration-300">
+          Our Value
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="value.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-cyan-300 bg-[#151c23] border-l-2 border-cyan-400 transition-colors">Our Impact</a>
+          <a href="Our_Clients.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Clients</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">Insights</a>
+      <a href="about.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">About</a>
+    </div>
+
+    <!-- CTA -->
+    <a href="contact.html" class="signature-gradient text-on-primary font-headline font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-sm hover:brightness-110 transition-all">
+      Contact Us
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative min-h-[680px] flex items-end overflow-hidden bg-surface-container-lowest">
+
+    <!-- Background: Field Economics 1 — left/centre -->
+    <div class="absolute inset-0 z-0">
+      <img
+        class="w-full h-full object-cover opacity-30"
+        src="assets/images/Field Economics 1.png"
+        alt="Oil field production economics"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080f15] via-[#080f15]/70 to-[#080f15]/20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080f15] via-transparent to-transparent"></div>
+    </div>
+
+    <!-- Field Economics 2 — right panel inset -->
+    <div class="absolute top-24 right-8 bottom-0 w-[38%] z-10 hidden lg:block overflow-hidden">
+      <img
+        class="w-full h-full object-cover opacity-50 grayscale"
+        src="assets/images/Field Economics 2.png"
+        alt="Reservoir field economics data"
+      />
+      <div class="absolute inset-0 bg-gradient-to-l from-transparent via-[#080f15]/30 to-[#080f15]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080f15] via-transparent to-[#080f15]/40"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#080f15] to-transparent"></div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative z-20 max-w-7xl mx-auto px-8 w-full pb-24 pt-48">
+      <div class="max-w-2xl">
+        <div class="flex items-center space-x-3 mb-6">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Value Proposition</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter mb-6" style="line-height: 1.1;">
+          Transforming<br/><span class="text-primary">Reservoir</span><br/>Economics.
+        </h1>
+        <p class="font-label text-sm tracking-widest uppercase text-on-surface-variant mb-6">
+          Targeting fundamental reservoir metrics for long-term production optimization and sustained value creation.
+        </p>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed max-w-xl mb-16">
+          Axerra's chemistry moves beyond simple stimulation to provide engineered solutions that operate at the level of fluid mechanics, rock physics, and production economics — delivering measurable, verifiable improvements to the KPIs that define a well's profitability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUE DRIVERS ===== -->
+  <section class="py-28 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-16 max-w-2xl">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Operational Value Drivers</span>
+        </div>
+        <h2 class="font-headline text-4xl font-bold tracking-tight">Focused on Performance Metrics. One Engineered System.</h2>
+      </div>
+
+      <!-- Grid: 2 columns, items 1–6 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+
+        <!-- 01: Daily Production Rates -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">01</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">monitoring</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: Barrels Per Day</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Daily Production Rates</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              By fundamentally altering fluid rheology within the reservoir, Axerra drives a step-change in deliverability. According to Darcy's Law, flow rate is inversely proportional to viscosity — reducing viscosity directly translates to higher throughput.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Laboratory performance:</strong> Viscosity reduced from over 100,000 cSt to less than 38 cSt against representative crude samples.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Field result:</strong> Production increases of 100% to over 500% documented within the first 14 days post-treatment.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">monitoring</span>
+          </div>
+        </div>
+
+        <!-- 02: Water Cut -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden border-t-2 border-primary">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">02</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">water_drop</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: Water Cut %</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Water Cut &amp; Sweep Efficiency</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              By optimizing the Mobility Ratio, Axerra ensures pumps are lifting oil rather than water. Lowering oil viscosity brings the mobility of the oil phase closer to that of the water phase — stabilizing flood fronts and preventing water fingering.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Mechanism:</strong> Viscosity reduction stabilizes the displacement front, preventing water from bypassing trapped oil in the reservoir matrix.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Field result:</strong> Water cuts reduced by up to 30% in heavy oil wells, significantly improving fractional oil flow.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">water_drop</span>
+          </div>
+        </div>
+
+        <!-- 03: Lifting Costs -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">03</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">price_check</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: $/bbl Lifting Cost</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Lifting Costs &amp; OPEX Reduction</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              Viscosity reduction decreases the mechanical resistance of the fluid column, producing direct and measurable savings in energy consumption, surface equipment load, and downhole maintenance cycles.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Friction reduction:</strong> Thinner oil lowers drag against tubing walls and flowlines, reducing overall line pressure requirements.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Energy efficiency:</strong> Reduced fluid resistance allows surface motors to operate at lower amperage — directly reducing monthly utility costs.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Equipment protection:</strong> Chemistry overcomes dry pump and fluid pound conditions, protecting downhole equipment from mechanical fatigue.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">price_check</span>
+          </div>
+        </div>
+
+        <!-- 04: Decline Curve -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">04</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">trending_down</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: Production Decline Rate</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Decline Curve Management</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              Axerra flattens the production decline curve by unlocking hydrocarbons in tight rock and micro-fractures that traditional completions cannot reach — specifically targeting wells where production falls faster than expected due to permeability impairment.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Penetration mechanism:</strong> Sub-nanometer particles leverage Brownian motion and disjoining pressure to access fracture networks where proppants cannot reach.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Long-term efficacy:</strong> Treatment provides durable hydrocarbon recovery improvements that persist beyond the initial stimulation window.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">trending_down</span>
+          </div>
+        </div>
+
+        <!-- 05: MTBF -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">05</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">build</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: Mean Time Between Failures</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Flow Assurance &amp; MTBF</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              Axerra improves Flow Assurance by preventing the organic and inorganic deposition events that cause unplanned downtime and costly rig interventions — addressing the problem at the chemistry level rather than through reactive remediation.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Solids suspension:</strong> Surfactant package acts as a dispersant, preventing paraffins and asphaltenes from plating out on tubing ID.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Operational result:</strong> Reduced rod breaks and tubing cleans extend asset operational life and reduce high-cost workover event frequency.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">build</span>
+          </div>
+        </div>
+
+        <!-- 06: ROI -->
+        <div class="bg-surface-container-low p-10 group hover:bg-surface-container transition-all duration-300 relative overflow-hidden border-t-2 border-primary">
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-headline text-primary font-black text-4xl leading-none">06</span>
+              <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-2xl">timeline</span>
+            </div>
+            <span class="font-label text-xs uppercase tracking-widest text-outline mb-3 block">KPI: Payback Period</span>
+            <h3 class="font-headline text-xl font-bold tracking-tight mb-4">Short-Term Return on Investment</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed text-sm mb-6">
+              Axerra prioritizes rapid production uplift through a streamlined, data-driven implementation process — minimizing the time between treatment deployment and measurable economic return.
+            </p>
+            <div class="space-y-3 pt-5 border-t border-outline-variant/15">
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Activation window:</strong> Standardized 15-day soak period designed to activate chemistry and begin measurable production response.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 bg-primary flex-shrink-0 mt-1.5"></span>
+                <span class="font-label text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface font-bold">Measurement cadence:</strong> Systematic performance monitoring at 7, 15, 30, and 90-day intervals to validate ROI and optimize surface equipment settings.</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[140px]">timeline</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 07: Asset Longevity — full-width flagship card -->
+      <div class="bg-surface-container p-0 group relative overflow-hidden border-t-2 border-tertiary">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+          <!-- Left: content -->
+          <div class="p-12 relative z-10">
+            <div class="flex items-start gap-5 mb-6">
+              <span class="font-headline text-tertiary font-black text-5xl leading-none flex-shrink-0">07</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-2 block">KPI: MTBF &amp; Lifting Cost/bbl</span>
+                <h3 class="font-headline text-2xl font-bold tracking-tight">Asset Longevity &amp; Mechanical Integrity</h3>
+              </div>
+            </div>
+            <p class="font-body text-on-surface-variant italic leading-relaxed mb-8">
+              Fundamental viscosity reduction eliminates the high-stress operating conditions — dry pump and fluid pound — that compromise artificial lift integrity and drive premature equipment failure in heavy oil assets. Moving high-viscosity, non-Newtonian fluids through narrow tubing creates extreme friction and sluggish intake speeds. The pump often outpaces the fluid's ability to fill the barrel, leading to mechanical vibration, rod float, and catastrophic rod breaks.
+            </p>
+            <div class="border-l-4 border-tertiary pl-5 mb-8">
+              <p class="font-body text-on-surface italic leading-relaxed">
+                By thinning the oil column from over 100,000 cSt to under 50 cSt, Axerra's technology ensures the pump remains constantly primed — reducing reciprocating torque on the surface unit and minimizing peak polished rod load.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: outcomes grid -->
+          <div class="bg-surface-container-high p-12 flex flex-col justify-center">
+            <h4 class="font-headline font-bold text-sm uppercase tracking-widest text-on-surface mb-8">Operational Outcomes</h4>
+            <div class="space-y-5">
+              <div class="flex items-start gap-4 p-5 bg-surface-container-low">
+                <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">verified</span>
+                <div>
+                  <span class="font-label text-xs font-bold text-on-surface uppercase tracking-wide block mb-1">Extended MTBF</span>
+                  <span class="font-label text-xs text-on-surface-variant leading-relaxed">Significant reduction in rod failures, motor burnouts, and seal degradation across the artificial lift system.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-5 bg-surface-container-low">
+                <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">savings</span>
+                <div>
+                  <span class="font-label text-xs font-bold text-on-surface uppercase tracking-wide block mb-1">Lower Maintenance CAPEX</span>
+                  <span class="font-label text-xs text-on-surface-variant leading-relaxed">Fewer workover interventions and specialized fishing jobs to recover broken equipment from downhole.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-5 bg-surface-container-low">
+                <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">bolt</span>
+                <div>
+                  <span class="font-label text-xs font-bold text-on-surface uppercase tracking-wide block mb-1">Sustainable OPEX</span>
+                  <span class="font-label text-xs text-on-surface-variant leading-relaxed">Direct energy savings as surface motors draw less amperage to lift a lighter, more lubricious fluid column.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FIELD IMAGE BREAK ===== -->
+  <section class="relative h-64 overflow-hidden">
+    <img
+      class="w-full h-full object-cover opacity-35"
+      src="assets/images/Field Economics 2.png"
+      alt="Field production economics"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0d141a] via-[#0d141a]/60 to-[#0d141a]"></div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <p class="font-body text-2xl md:text-3xl italic text-on-surface text-center max-w-3xl px-8 leading-relaxed">
+        "Chemistry is applied only where it is <span class="text-primary not-italic font-headline font-bold">technically justified</span> and <span class="text-primary not-italic font-headline font-bold">economically relevant.</span>"
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="py-20 bg-primary-container relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+      <div>
+        <h2 class="font-headline text-3xl md:text-4xl font-black text-on-primary-container tracking-tighter mb-3">
+          Ready to evaluate your asset's potential?
+        </h2>
+        <p class="font-label text-on-primary-container/80 max-w-xl">Our engineers will assess your reservoir data and identify which value drivers are most accessible in your specific field conditions.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 flex-shrink-0">
+        <a href="contact.html" class="bg-surface text-primary font-headline font-black px-10 py-5 rounded-sm uppercase tracking-widest hover:scale-105 transition-transform text-center">
+          Contact Us
+        </a>
+        <a href="How_We_Engage.html" class="border border-on-primary-container/30 text-on-primary-container font-headline font-bold px-8 py-5 rounded-sm uppercase tracking-widest hover:bg-on-primary-container/10 transition-all text-center text-xs">
+          How We Engage
+        </a>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-80 h-80 bg-primary/15 blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#080f15] w-full py-16 px-8 border-t border-slate-800/20">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+
+    <div class="col-span-1">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-9 w-auto mb-5 opacity-80" style="mix-blend-mode:screen;filter:invert(1);"/>
+      <p class="font-body italic text-base text-slate-500 leading-relaxed">Precision Engineering for Subsurface Excellence.</p>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Navigation</h5>
+      <a href="index.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">What We Do</a>
+      <a href="Our_Products.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Products</a>
+      <a href="Our_Clients.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Clients</a>
+      <a href="How_We_Engage.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">How We Engage</a>
+      <a href="value.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Value</a>
+      <a href="insights.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Insights</a>
+      <a href="about.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">About</a>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Legal &amp; Location</h5>
+      <a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">New York, NY HQ</a>
+      <a href="privacy.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Privacy Policy</a>
+      <a href="terms.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Terms of Service</a>
+    </div>
+
+    <div class="space-y-4">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Connect</h5>
+      <a href="contact.html" class="block w-full py-3 text-center signature-gradient font-headline text-xs font-bold uppercase tracking-widest text-on-primary hover:brightness-110 transition-all">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body italic text-sm text-slate-600">© 2026 Axerra LLC. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="about.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">About</a>
+      <a href="contact.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

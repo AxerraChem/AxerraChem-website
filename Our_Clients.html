@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Clients — Axerra Chemical</title>
+
+  <!-- Google Fonts -->
+  <link href="css/fonts.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface-variant": "#bfc7d1",
+            "on-primary": "#00363f",
+            "secondary-fixed": "#c9e7f7",
+            "surface-container-high": "#242b31",
+            "surface-bright": "#333a41",
+            "surface-variant": "#2f363c",
+            "primary-fixed-dim": "#00daf8",
+            "on-background": "#dce3ec",
+            "surface-container-low": "#151c23",
+            "primary-container": "#007d8f",
+            "on-tertiary-container": "#fff5eb",
+            "on-surface": "#dce3ec",
+            "inverse-primary": "#006877",
+            "error": "#ffb4ab",
+            "tertiary": "#ffba38",
+            "surface-container-lowest": "#080f15",
+            "on-tertiary": "#432c00",
+            "secondary": "#adcbda",
+            "error-container": "#93000a",
+            "outline-variant": "#404850",
+            "secondary-container": "#304d5a",
+            "primary": "#00daf8",
+            "surface-dim": "#0d141a",
+            "outline": "#8a919b",
+            "on-secondary-container": "#9fbdcc",
+            "surface-container-highest": "#2f363c",
+            "surface": "#0d141a",
+            "on-primary-container": "#e9faff",
+            "on-error": "#690005",
+            "on-secondary": "#163440",
+            "surface-tint": "#00daf8",
+            "surface-container": "#192027",
+            "background": "#0d141a",
+            "tertiary-container": "#976800"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Newsreader"],
+            label: ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-primary/30">
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 w-full z-50 bg-[#0d141a]/80 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-10 w-auto" style="mix-blend-mode:screen;filter:invert(1);"/>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">What We Do</a>
+
+      <!-- Solutions dropdown -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">
+          Our Solutions
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="Our_Products.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Products</a>
+          <a href="How_We_Engage.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">How We Engage</a>
+        </div>
+      </div>
+
+      <!-- Value dropdown — active -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-cyan-400 border-b-2 border-cyan-400 pb-0.5 transition-colors duration-300">
+          Our Value
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="value.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Impact</a>
+          <a href="Our_Clients.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-cyan-300 bg-[#151c23] border-l-2 border-cyan-400 transition-colors">Our Clients</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">Insights</a>
+      <a href="about.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">About</a>
+    </div>
+
+    <!-- CTA -->
+    <a href="contact.html" class="signature-gradient text-on-primary font-headline font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-sm hover:brightness-110 transition-all">
+      Contact Us
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative min-h-[620px] flex items-center pt-24 overflow-hidden bg-surface-container-lowest">
+    <div class="absolute inset-0 z-0">
+      <img
+        class="w-full h-full object-cover opacity-50"
+        src="assets/images/field%20economics%201.png"
+        alt="Oil field operations"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080f15] via-[#080f15]/90 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080f15]/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+      <div class="max-w-3xl">
+        <div class="flex items-center space-x-3 mb-5">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">The Operators We Serve</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-6xl font-extrabold text-on-surface tracking-tighter mb-8" style="line-height: 1.1;">
+          Supporting Clients<br/>Globally Across<br/><span class="text-primary">Diverse Assets</span> and <span class="text-primary">Geologies.</span>
+        </h1>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed max-w-2xl mb-5">
+          Axerra works with oil and gas operators across a broad range of geographic regions and asset types. While our engagements are global in scope, our primary operational focus is on projects located in the <strong class="text-on-surface not-italic font-bold">Middle East, South America, Central America, and Europe</strong>, where reservoirs often present elevated technical and operational complexity.
+        </p>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed max-w-2xl mb-20">
+          Our clients include both <strong class="text-on-surface not-italic font-bold">large integrated operators and smaller, technically focused producers</strong>. Engagements range from single&#8209;asset evaluations to multi&#8209;field programs, with chemistry applied as part of ongoing production, stimulation, or integrity management strategies. The scale of the operator is less important than the nature of the challenge being addressed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GEOGRAPHIC FOCUS + WORLD MAP ===== -->
+  <section class="py-28 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: regions -->
+        <div>
+          <div class="flex items-center space-x-3 mb-3">
+            <span class="w-8 h-px bg-primary"></span>
+            <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Primary Operational Focus</span>
+          </div>
+          <h2 class="font-headline text-4xl font-bold tracking-tight mb-8">Where We Operate</h2>
+
+          <div class="space-y-4">
+
+            <div class="flex items-start gap-5 p-6 bg-surface-container-low border-l-2 border-primary group hover:bg-surface-container transition-all duration-300">
+              <span class="material-symbols-outlined text-primary text-2xl mt-0.5">place</span>
+              <div>
+                <h3 class="font-headline font-bold text-base tracking-tight mb-1">Middle East</h3>
+                <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Mature carbonate and sandstone reservoirs with complex fluid systems, high water cut, and demanding production conditions.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-5 p-6 bg-surface-container-low border-l-2 border-outline-variant/30 group hover:bg-surface-container hover:border-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary text-2xl mt-0.5">place</span>
+              <div>
+                <h3 class="font-headline font-bold text-base tracking-tight mb-1">South America</h3>
+                <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Heavy oil and extra-heavy crude assets where viscosity reduction and flow assurance chemistry deliver material production uplift.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-5 p-6 bg-surface-container-low border-l-2 border-outline-variant/30 group hover:bg-surface-container hover:border-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary text-2xl mt-0.5">place</span>
+              <div>
+                <h3 class="font-headline font-bold text-base tracking-tight mb-1">Central America</h3>
+                <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Onshore producing fields with logistical complexity, where compact, adaptable chemical programs provide operational flexibility.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-5 p-6 bg-surface-container-low border-l-2 border-outline-variant/30 group hover:bg-surface-container hover:border-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary text-2xl mt-0.5">place</span>
+              <div>
+                <h3 class="font-headline font-bold text-base tracking-tight mb-1">Europe</h3>
+                <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Mature European assets in late-field-life phase, targeting OPEX reduction and production sustainability.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: world map -->
+        <div class="relative">
+          <div class="relative bg-surface-container-lowest p-6">
+            <img
+              src="assets/images/WorldMap.png"
+              alt="Global operational footprint — Middle East, South America, Central America, Europe"
+              class="w-full h-auto"
+              style="mix-blend-mode: luminosity; opacity: 0.75; filter: brightness(0.9) contrast(1.1);"
+            />
+            <!-- Cyan tint overlay to match brand palette -->
+            <div class="absolute inset-6 pointer-events-none" style="background: linear-gradient(135deg, rgba(0,218,248,0.04) 0%, transparent 60%);"></div>
+          </div>
+          <p class="font-label text-xs text-outline tracking-widest uppercase mt-3 text-center">Primary operational regions — global scope, focused execution</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPLEX RESERVOIR ENVIRONMENTS ===== -->
+  <section class="py-28 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-12 max-w-2xl">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Asset Complexity</span>
+        </div>
+        <h2 class="font-headline text-4xl font-bold tracking-tight mb-5">Complex Reservoir and Production Environments</h2>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed">
+          A significant portion of Axerra's work involves assets where recovery is limited by <strong class="text-on-surface not-italic font-bold">geological complexity, fluid behavior, or operating conditions</strong>, rather than by hydrocarbons in place.
+        </p>
+      </div>
+
+      <!-- 4 environment cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
+
+        <div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5 shrink-0">layers</span>
+            <div>
+              <h3 class="font-headline font-bold text-base tracking-tight mb-2">Low-Permeability or Heterogeneous Formations</h3>
+              <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Reservoirs with uneven flow distribution, channelling, or low matrix permeability where standard waterflood or production programs underperform.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5 shrink-0">water_drop</span>
+            <div>
+              <h3 class="font-headline font-bold text-base tracking-tight mb-2">Heavy-Oil and High-Viscosity Systems</h3>
+              <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Crudes with viscosities exceeding 100 cSt where thermal methods are uneconomic or impractical, and chemical viscosity reduction delivers the required mobility improvement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5 shrink-0">science</span>
+            <div>
+              <h3 class="font-headline font-bold text-base tracking-tight mb-2">Asphaltene, Wax, or Water-Handling Challenges</h3>
+              <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Reservoirs with elevated asphaltene deposition, paraffin crystallization, or complex produced water management requirements that standard field programs cannot address.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-container p-8 group hover:bg-surface-container-high transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5 shrink-0">thermostat</span>
+            <div>
+              <h3 class="font-headline font-bold text-base tracking-tight mb-2">Wide Thermal, Pressure, or Salinity Ranges</h3>
+              <p class="font-body text-sm text-on-surface-variant italic leading-relaxed">Fields operating across extreme temperature, pressure, or brine salinity conditions where chemistry must be formulated specifically for the operating envelope rather than applied off-the-shelf.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="max-w-3xl">
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed">
+          Axerra's engagement model and product portfolio are structured to operate in these conditions, where standard chemical programs often require adaptation or redevelopment to remain effective.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-3xl">
+        <div class="flex items-center space-x-3 mb-4">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Start the Conversation</span>
+        </div>
+        <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          Working in a complex reservoir environment?
+        </h2>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed mb-10">
+          Reach out to discuss your asset's specific challenges. Axerra's technical team will assess whether a targeted chemical program is a viable path to improved production economics.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="contact.html" class="signature-gradient text-on-primary font-headline font-bold px-8 py-4 rounded-sm uppercase tracking-tight hover:brightness-110 transition-all">
+            Contact Us
+          </a>
+          <a href="How_We_Engage.html" class="glass-panel ghost-border text-tertiary font-headline font-bold px-8 py-4 rounded-sm hover:bg-surface-variant/40 transition-all">
+            How We Engage <span class="material-symbols-outlined text-base align-middle ml-1">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#080f15] w-full py-16 px-8 border-t border-slate-800/20">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+
+    <div class="col-span-1">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-9 w-auto mb-5 opacity-80" style="mix-blend-mode:screen;filter:invert(1);"/>
+      <p class="font-body italic text-base text-slate-500 leading-relaxed">Precision Engineering for Subsurface Excellence.</p>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Navigation</h5>
+      <a href="index.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">What We Do</a>
+      <a href="Our_Products.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Products</a>
+      <a href="Our_Clients.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Clients</a>
+      <a href="How_We_Engage.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">How We Engage</a>
+      <a href="value.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Value</a>
+      <a href="insights.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Insights</a>
+      <a href="about.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">About</a>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Legal &amp; Location</h5>
+      <a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">New York, NY HQ</a>
+      <a href="privacy.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Privacy Policy</a>
+      <a href="terms.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Terms of Service</a>
+    </div>
+
+    <div class="space-y-4">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Connect</h5>
+      <a href="contact.html" class="block w-full py-3 text-center signature-gradient font-headline text-xs font-bold uppercase tracking-widest text-on-primary hover:brightness-110 transition-all">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body italic text-sm text-slate-600">© 2026 Axerra LLC. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="about.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">About</a>
+      <a href="contact.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

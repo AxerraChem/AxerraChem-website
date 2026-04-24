@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Insights — Axerra Chemical</title>
+
+  <!-- Google Fonts -->
+  <link href="css/fonts.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface-variant": "#bfc7d1",
+            "on-primary": "#00363f",
+            "secondary-fixed": "#c9e7f7",
+            "surface-container-high": "#242b31",
+            "surface-bright": "#333a41",
+            "surface-variant": "#2f363c",
+            "primary-fixed-dim": "#00daf8",
+            "on-background": "#dce3ec",
+            "surface-container-low": "#151c23",
+            "primary-container": "#007d8f",
+            "on-tertiary-container": "#fff5eb",
+            "on-surface": "#dce3ec",
+            "inverse-primary": "#006877",
+            "error": "#ffb4ab",
+            "tertiary": "#ffba38",
+            "surface-container-lowest": "#080f15",
+            "on-tertiary": "#432c00",
+            "secondary": "#adcbda",
+            "error-container": "#93000a",
+            "outline-variant": "#404850",
+            "secondary-container": "#304d5a",
+            "primary": "#00daf8",
+            "surface-dim": "#0d141a",
+            "outline": "#8a919b",
+            "on-secondary-container": "#9fbdcc",
+            "surface-container-highest": "#2f363c",
+            "surface": "#0d141a",
+            "on-primary-container": "#e9faff",
+            "on-error": "#690005",
+            "on-secondary": "#163440",
+            "surface-tint": "#00daf8",
+            "surface-container": "#192027",
+            "background": "#0d141a",
+            "tertiary-container": "#976800"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Newsreader"],
+            label: ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-primary/30">
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 w-full z-50 bg-[#0d141a]/80 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-10 w-auto" style="mix-blend-mode:screen;filter:invert(1);"/>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">What We Do</a>
+
+      <!-- Solutions dropdown -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">
+          Our Solutions
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="Our_Products.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Products</a>
+          <a href="How_We_Engage.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">How We Engage</a>
+        </div>
+      </div>
+
+      <!-- Value dropdown -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">
+          Our Value
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="value.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Impact</a>
+          <a href="Our_Clients.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Clients</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="font-headline tracking-tight font-bold text-xs uppercase text-cyan-400 border-b-2 border-cyan-400 pb-0.5 transition-colors duration-300">Insights</a>
+
+      <a href="about.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">About</a>
+    </div>
+
+    <!-- CTA -->
+    <a href="contact.html" class="signature-gradient text-on-primary font-headline font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-sm hover:brightness-110 transition-all">
+      Contact Us
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="relative min-h-[640px] flex items-end overflow-hidden bg-surface-container-lowest">
+
+    <!-- Background: fluid 2 -->
+    <div class="absolute inset-0 z-0">
+      <img
+        class="w-full h-full object-cover opacity-55"
+        src="assets/images/fluid%202.png"
+        alt="Fluid dynamics — reservoir chemistry"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080f15] via-[#080f15]/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080f15] via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full pb-20">
+      <div class="max-w-3xl">
+        <div class="flex items-center space-x-3 mb-5">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Technical Perspectives</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter mb-6" style="line-height: 1.1;">
+          Our <span class="text-primary">Insights.</span>
+        </h1>
+        <p class="font-label text-sm tracking-widest uppercase text-on-surface-variant mb-6">
+          Applied technical perspectives on recovery, chemistry, and field performance.
+        </p>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed max-w-2xl">
+          Axerra Insights presents technical analysis and field&#8209;informed perspectives drawn from active engagements across diverse reservoirs and operating environments. Content focuses on the physical and chemical factors that influence recovery, flow behavior, and operational reliability, with an emphasis on practical application rather than theory alone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: FEATURED INSIGHT ===== -->
+  <section class="py-28 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="flex items-center space-x-3 mb-12">
+        <span class="w-8 h-px bg-primary"></span>
+        <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Featured</span>
+      </div>
+
+      <!-- Featured card — full width, two-column -->
+      <a href="viscosityeng.html" class="group block bg-surface-container-low hover:bg-surface-container transition-all duration-300 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+
+          <!-- Left: image with headline + paragraph overlaid -->
+          <div class="relative min-h-[520px] overflow-hidden flex flex-col justify-between p-12">
+            <img
+              class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-50 transition-opacity duration-300"
+              src="assets/images/Brand%20Image%20-%20fluid.png"
+              alt="Molecular-level chemical engineering and viscosity reduction"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080f15] via-[#080f15]/50 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#080f15]/50 to-transparent"></div>
+
+            <!-- Top: category tag + date -->
+            <div class="relative z-10 flex items-center gap-4">
+              <span class="font-label text-xs uppercase tracking-widest text-on-primary bg-primary px-3 py-1">Flow Assurance</span>
+              <span class="font-label text-xs text-outline tracking-widest uppercase">April 2026</span>
+              <span class="w-px h-3 bg-outline-variant"></span>
+              <span class="font-label text-xs text-outline tracking-widest uppercase">12 min read</span>
+            </div>
+
+            <!-- Bottom: headline + paragraph -->
+            <div class="relative z-10">
+              <h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface mb-5 group-hover:text-primary transition-colors duration-300">
+                Viscosity Reduction in Heavy Oil Systems: From Laboratory Formulation to Field Performance
+              </h2>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                High-viscosity crude presents a fundamental flow challenge that cannot be resolved by pressure alone. This analysis examines the chemical mechanisms behind effective viscosity reduction — surfactant-crude interactions, emulsification thresholds, and thermal stability — and traces how laboratory findings translate to field-measurable production uplift.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: bullets + CTA -->
+          <div class="p-12 flex flex-col justify-between">
+            <div class="border-l-2 border-primary pl-6 mb-8">
+              <p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-4">Key Themes</p>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-1.5 h-1.5 bg-primary shrink-0"></span>
+                  <span class="font-body text-on-surface-variant text-sm leading-relaxed"><span class="font-headline font-bold text-on-surface">Viscosity as a first&#8209;order control variable:</span> The approach targets oil viscosity directly — one of the primary limiting terms in Darcy's Law — to improve reservoir deliverability without mechanical intervention.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-1.5 h-1.5 bg-primary shrink-0"></span>
+                  <span class="font-body text-on-surface-variant text-sm leading-relaxed"><span class="font-headline font-bold text-on-surface">Mobility ratio stabilization in high&#8209;viscosity systems:</span> By reducing oil viscosity relative to water, the technology drives the mobility ratio toward equilibrium, improving sweep efficiency and reducing water fingering.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-1.5 h-1.5 bg-primary shrink-0"></span>
+                  <span class="font-body text-on-surface-variant text-sm leading-relaxed"><span class="font-headline font-bold text-on-surface">Nanoparticle&#8209;surfactant delivery at the pore scale:</span> Sub&#8209;nanometer particles transport surfactants into micro&#8209;pore structures and fracture networks inaccessible to conventional treatments.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-1.5 h-1.5 bg-primary shrink-0"></span>
+                  <span class="font-body text-on-surface-variant text-sm leading-relaxed"><span class="font-headline font-bold text-on-surface">Physics&#8209;based recovery mechanisms:</span> Brownian motion and disjoining pressure contribute to detaching oil from rock surfaces, mobilizing hydrocarbons previously considered unrecoverable.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-1.5 h-1.5 bg-primary shrink-0"></span>
+                  <span class="font-body text-on-surface-variant text-sm leading-relaxed"><span class="font-headline font-bold text-on-surface">Applicability across reservoir types:</span> The technology is positioned for heavy oil, unconventional, and declining conventional wells where fluid behavior — not hydrocarbons in place — limits performance.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-2 text-tertiary font-headline font-bold text-xs uppercase tracking-widest">
+              Read Article
+              <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform duration-200">arrow_forward</span>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2b: WHITE PAPER DOWNLOAD ===== -->
+  <section class="py-20 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <!-- Header row -->
+      <div class="flex items-center gap-4 mb-8">
+        <span class="font-label text-xs uppercase tracking-widest text-on-primary bg-primary px-3 py-1">White Paper</span>
+        <span class="font-label text-xs text-outline tracking-widest uppercase">Axerra Technical Series</span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+
+        <!-- Left: title + body + key topics -->
+        <div class="flex-1 min-w-0">
+          <h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface mb-3">
+            Overcoming the Asphaltene–Wax Nexus<br/>in Heavy Oil Systems
+          </h2>
+          <p class="font-body text-sm text-primary italic mb-6 tracking-wide">
+            A technical examination of flow-assurance challenges in high-viscosity crude oil production
+          </p>
+          <p class="font-body text-on-surface-variant leading-relaxed mb-5">
+            This white paper examines the coupled behavior of waxes, asphaltenes, and resins in heavy-oil systems and the implications for production performance and field development planning. Drawing on established thermodynamic principles and recent advances in chemical inhibition technologies, the paper outlines why conventional paraffin control strategies often underperform in asphaltenic crudes and how reservoir-specific chemical selection can improve long-term flow assurance.
+          </p>
+          <p class="font-body text-on-surface-variant leading-relaxed mb-8">
+            The discussion frames paraffin management not as a reactive maintenance issue, but as an engineered component of production strategy informed by crude composition, thermal profiles, and operating conditions.
+          </p>
+
+          <!-- Key topics -->
+          <div class="border-l-2 border-primary pl-6">
+            <p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-4">Key Topics Covered</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                <span class="font-body text-on-surface-variant text-sm leading-relaxed">The role of asphaltenes as nucleating agents in wax crystallization and deposition</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                <span class="font-body text-on-surface-variant text-sm leading-relaxed">Limitations of traditional paraffin inhibitors in high-viscosity, high-resin systems</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                <span class="font-body text-on-surface-variant text-sm leading-relaxed">Evaluation methods beyond standard cold-finger testing, including carbon-chain-specific analysis</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                <span class="font-body text-on-surface-variant text-sm leading-relaxed">Trade-offs between continuous chemical injection and batch treatment strategies</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                <span class="font-body text-on-surface-variant text-sm leading-relaxed">Implications for completion design, artificial lift selection, and field development planning</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Centre: well schematic image -->
+        <div class="hidden lg:block shrink-0 w-56 xl:w-72 self-stretch relative overflow-hidden">
+          <img
+            src="assets/images/Brand%20Image%20-%20well%20schematics%201.png"
+            alt="Well schematic diagram"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            style="opacity: 0.35; mix-blend-mode: luminosity;"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-transparent to-surface-container-lowest"></div>
+        </div>
+
+        <!-- Right: download CTA -->
+        <div class="shrink-0 flex flex-col items-start lg:items-end gap-4 lg:pt-2">
+          <div class="flex items-center gap-3 text-outline">
+            <span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+            <span class="font-label text-xs uppercase tracking-widest">PDF — Direct Download</span>
+          </div>
+          <a href="assets/downloads/Axerra_Whitepaper_Asphaltene_Wax_Nexus.pdf" download
+             class="inline-flex items-center gap-3 signature-gradient text-on-primary font-headline font-bold px-8 py-4 rounded-sm uppercase tracking-tight hover:brightness-110 transition-all">
+            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;">download</span>
+            Download White Paper
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#080f15] w-full py-16 px-8 border-t border-slate-800/20">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+
+    <div class="col-span-1">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-9 w-auto mb-5 opacity-80" style="mix-blend-mode:screen;filter:invert(1);"/>
+      <p class="font-body italic text-base text-slate-500 leading-relaxed">Precision Engineering for Subsurface Excellence.</p>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Navigation</h5>
+      <a href="index.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">What We Do</a>
+      <a href="Our_Products.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Products</a>
+      <a href="Our_Clients.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Clients</a>
+      <a href="How_We_Engage.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">How We Engage</a>
+      <a href="value.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Value</a>
+      <a href="insights.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Insights</a>
+      <a href="about.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">About</a>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Legal &amp; Location</h5>
+      <a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">New York, NY HQ</a>
+      <a href="privacy.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Privacy Policy</a>
+      <a href="terms.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Terms of Service</a>
+    </div>
+
+    <div class="space-y-4">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Connect</h5>
+      <a href="contact.html" class="block w-full py-3 text-center signature-gradient font-headline text-xs font-bold uppercase tracking-widest text-on-primary hover:brightness-110 transition-all">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body italic text-sm text-slate-600">© 2026 Axerra LLC. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="about.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">About</a>
+      <a href="contact.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

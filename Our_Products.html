@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Products — Axerra Chemical</title>
+
+  <!-- Google Fonts -->
+  <link href="css/fonts.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface-variant": "#bfc7d1",
+            "on-primary": "#00363f",
+            "secondary-fixed": "#c9e7f7",
+            "surface-container-high": "#242b31",
+            "surface-bright": "#333a41",
+            "surface-variant": "#2f363c",
+            "primary-fixed-dim": "#00daf8",
+            "on-background": "#dce3ec",
+            "surface-container-low": "#151c23",
+            "primary-container": "#007d8f",
+            "on-tertiary-container": "#fff5eb",
+            "on-surface": "#dce3ec",
+            "inverse-primary": "#006877",
+            "error": "#ffb4ab",
+            "tertiary": "#ffba38",
+            "surface-container-lowest": "#080f15",
+            "on-tertiary": "#432c00",
+            "secondary": "#adcbda",
+            "error-container": "#93000a",
+            "outline-variant": "#404850",
+            "secondary-container": "#304d5a",
+            "primary": "#00daf8",
+            "surface-dim": "#0d141a",
+            "outline": "#8a919b",
+            "on-secondary-container": "#9fbdcc",
+            "surface-container-highest": "#2f363c",
+            "surface": "#0d141a",
+            "on-primary-container": "#e9faff",
+            "on-error": "#690005",
+            "on-secondary": "#163440",
+            "surface-tint": "#00daf8",
+            "surface-container": "#192027",
+            "background": "#0d141a",
+            "tertiary-container": "#976800"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Newsreader"],
+            label: ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-primary/30">
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 w-full z-50 bg-[#0d141a]/80 backdrop-blur-xl transition-all duration-300">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-10 w-auto" style="mix-blend-mode:screen;filter:invert(1);"/>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">What We Do</a>
+
+      <!-- Solutions dropdown — active -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-cyan-400 border-b-2 border-cyan-400 pb-0.5 transition-colors duration-300">
+          Our Solutions
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="Our_Products.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-cyan-300 bg-[#151c23] border-l-2 border-cyan-400 transition-colors">Our Products</a>
+          <a href="How_We_Engage.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">How We Engage</a>
+        </div>
+      </div>
+
+      <!-- Value dropdown -->
+      <div class="relative group nav-dropdown">
+        <a href="#" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">
+          Our Value
+          <svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible z-50">
+          <a href="value.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Impact</a>
+          <a href="Our_Clients.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23] transition-colors">Our Clients</a>
+        </div>
+      </div>
+
+      <a href="insights.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">Insights</a>
+      <a href="about.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors duration-300">About</a>
+    </div>
+
+    <!-- CTA -->
+    <a href="contact.html" class="signature-gradient text-on-primary font-headline font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-sm hover:brightness-110 transition-all">
+      Contact Us
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-surface-container-lowest">
+    <div class="absolute inset-0 z-0">
+      <img
+        class="w-full h-full object-cover opacity-99"
+        src="assets/images/Brand%20Image%20-%20Molecule.png"
+        alt="Molecular-level chemical engineering"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#080f15] via-[#080f15]/85 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080f15]/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+      <div class="max-w-3xl">
+        <div class="flex items-center space-x-3 mb-6">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Solutions — Our Products</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter mb-8" style="line-height: 1.1;">
+          Precision Chemistry<br/>for <span class="text-primary">Enhanced</span><br/>Oil Recovery.
+        </h1>
+        <p class="font-body text-xl text-on-surface-variant max-w-2xl italic leading-relaxed mb-5">
+          Axerra’s product portfolio is designed to address the physical constraints that limit oil recovery in mature, unconventional, and heavy‑oil assets. The technologies are developed as engineered chemical systems, applied through reservoir‑specific evaluation and deployment workflows.
+Across both stimulation and production phases, Axerra products are applied to improve fluid mobility, manage flow behavior, and support the economic and operational performance of existing producing assets.<br/><br/>
+        </p>
+        <a href="#product-categories" class="inline-flex items-center gap-3 signature-gradient text-on-primary font-headline font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-sm hover:brightness-110 transition-all">
+          Our Products
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: ‘FILL’ 0, ‘wght’ 600, ‘GRAD’ 0, ‘opsz’ 24;">arrow_downward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION DOMAINS ===== -->
+  <section class="py-28 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-14">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Solution Domains</span>
+        </div>
+        <h2 class="font-headline text-4xl font-bold text-on-surface tracking-tight">Axerra's products span three primary application domains.</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <!-- Production -->
+        <div class="bg-surface-container p-10 flex flex-col group hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10 flex flex-col h-full">
+            <span class="material-symbols-outlined text-primary text-3xl mb-5 block">oil_barrel</span>
+            <span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold mb-4">Domain 01</span>
+            <h3 class="font-headline text-2xl font-bold mb-5 tracking-tight">Production</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed">
+              Chemistries focused on maintaining stable production by controlling organic and inorganic deposition, managing fluids separation, treating sour gas, and protecting equipment and personnel.
+            </p>
+            <p class="font-label text-sm text-on-surface-variant leading-relaxed mt-5 pt-5 border-t border-outline-variant/20">
+              Applications extend from downhole and near‑wellbore environments through separators, treaters, storage, and processing facilities.
+            </p>
+          </div>
+          <div class="absolute -right-6 -bottom-6 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[160px]">oil_barrel</span>
+          </div>
+        </div>
+
+        <!-- Stimulation -->
+        <div class="bg-surface-container p-10 flex flex-col group hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden border-t-2 border-primary">
+          <div class="relative z-10 flex flex-col h-full">
+            <span class="material-symbols-outlined text-primary text-3xl mb-5 block">science</span>
+            <span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold mb-4">Domain 02</span>
+            <h3 class="font-headline text-2xl font-bold mb-5 tracking-tight">Stimulation</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed">
+              Chemical systems used during drilling, completion, and intervention operations, including acidizing, fracturing, wireline, and coiled tubing.
+            </p>
+            <p class="font-label text-sm text-on-surface-variant leading-relaxed mt-5 pt-5 border-t border-outline-variant/20">
+              These formulations are designed to support effective stimulation while managing corrosion, friction, iron control, and compatibility with downhole materials and produced fluids.
+            </p>
+          </div>
+          <div class="absolute -right-6 -bottom-6 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[160px]">science</span>
+          </div>
+        </div>
+
+        <!-- Midstream -->
+        <div class="bg-surface-container p-10 flex flex-col group hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden">
+          <div class="relative z-10 flex flex-col h-full">
+            <span class="material-symbols-outlined text-primary text-3xl mb-5 block">valve</span>
+            <span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold mb-4">Domain 03</span>
+            <h3 class="font-headline text-2xl font-bold mb-5 tracking-tight">Midstream</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed">
+              Products formulated to protect pipelines and optimize fluid transport in gathering, transmission, and terminal systems.
+            </p>
+            <p class="font-label text-sm text-on-surface-variant leading-relaxed mt-5 pt-5 border-t border-outline-variant/20">
+              Applications include corrosion control, scale inhibition, hydrate mitigation, and drag reduction to support throughput, system integrity, and asset longevity.
+            </p>
+          </div>
+          <div class="absolute -right-6 -bottom-6 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <span class="material-symbols-outlined text-[160px]">valve</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT CATEGORIES ===== -->
+  <section id="product-categories" class="py-28 bg-surface scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-16 max-w-3xl">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Product Categories</span>
+        </div>
+        <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6">Axerra's Chemistry Platforms:</h2>
+        <p class="font-body text-lg text-on-surface-variant italic leading-relaxed">
+          Axerra's product portfolio is organized around the underlying physical or chemical mechanism each system addresses — not by general product type or application label. Select a category to explore the technical basis and Axerra's formulation approach.
+        </p>
+      </div>
+
+      <!-- Accordion -->
+      <div class="divide-y divide-outline-variant/20" id="product-accordion">
+
+        <!-- Item 1: Flow Assurance -->
+        <div class="accordion-item">
+          <button class="accordion-trigger w-full flex items-center justify-between py-7 text-left group" aria-expanded="false">
+            <div class="flex items-center gap-6">
+              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0">water_drop</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-1 block">Flow Assurance</span>
+                <h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors duration-200">Paraffin &amp; Asphaltene Control</h3>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all duration-200 accordion-chevron flex-shrink-0 ml-6">expand_more</span>
+          </button>
+          <div class="accordion-panel hidden pb-12 pl-14 pr-8">
+            <div class="max-w-4xl space-y-6">
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Paraffin deposition is fundamentally a solubility phenomenon. As reservoir fluids travel uphole and cool below the wax appearance temperature (WAT), long-chain alkanes (C₂₀–C₆₀) lose solubility in the crude matrix and begin crystallizing. Pressure decline compounds the problem — as reservoir pressure drops, dissolved gases evolve, further reducing the solvent capacity of the oil phase and driving paraffin and asphaltene systems toward instability simultaneously.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Asphaltenes operate differently: they exist as a colloidal suspension stabilized by resins that coat the aggregates and keep them dispersed. When crude oil loses its ability to maintain this suspension — through changes in composition, temperature, pressure, or the introduction of incompatible fluids — asphaltenes precipitate. Unlike paraffins, asphaltene deposits tend to be hard, brittle, and preferentially locate at the near-wellbore formation face and lower tubing string, where pressure drawdown is greatest.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Axerra's solvent and inhibitor chemistries attack both mechanisms. Aromatic solvents (xylene, toluene, specialty blends) work by re-solvating deposited material — aromatics are strongly miscible with asphaltene aggregates due to π–π electron stacking interactions between the aromatic rings. Crystal modifier inhibitors work upstream of deposition: they adsorb onto growing paraffin crystal faces, disrupting normal crystal morphology, slowing growth kinetics, and preventing the interlocking crystal network that causes pour point elevation and flow restriction. Asphaltene dispersants function by competitive adsorption — polar headgroups bind to the asphaltene surface, while hydrocarbon tails extend into the oil phase, sterically preventing particle–particle aggregation and aggregate-to-surface adhesion.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Sour Gas Treatment -->
+        <div class="accordion-item">
+          <button class="accordion-trigger w-full flex items-center justify-between py-7 text-left group" aria-expanded="false">
+            <div class="flex items-center gap-6">
+              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0">air</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-1 block">Sour Gas Treatment</span>
+                <h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors duration-200">H₂S &amp; Mercaptan Scavenging</h3>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all duration-200 accordion-chevron flex-shrink-0 ml-6">expand_more</span>
+          </button>
+          <div class="accordion-panel hidden pb-12 pl-14 pr-8">
+            <div class="max-w-4xl space-y-6">
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Triazine — the industry's dominant liquid H₂S scavenger — is a heterocyclic nitrogen compound formed by reacting aldehydes with alkanolamines. Injected directly into the gas or produced-fluid stream, it reacts irreversibly with H₂S via nucleophilic substitution, forming stable dithiazine compounds that are non-volatile and do not re-release hydrogen sulfide into the system or atmosphere. The practical stoichiometry is approximately 2 moles of H₂S captured per mole of triazine — a theoretical third capture is energetically unfavorable due to reduced electrophilicity at the carbon atom after two substitutions have occurred.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Formulation chemistry matters significantly in scavenger selection. MEA-triazine is the most widely deployed variant, but its reaction byproducts can elevate system pH — contributing to carbonate and sulfide scaling — and generate intractable dithiazine solids under certain conditions. MMA-triazine alternatives produce more water-soluble byproducts and reduce solid deposition risk, a meaningful OPEX consideration in long-interval continuous injection programs. Axerra's H₂S and mercaptan scavenger portfolio spans both chemistries, plus non-triazine and formaldehyde-free formulations for applications where triazine byproduct risk or regulatory constraints are driving factors.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                For vapor-phase applications — vessel entry, tank cleaning, confined-space work — the control problem shifts from liquid-phase neutralization to LEL reduction. Vapor-phase scavengers must volatilize sufficiently to contact gas-phase H₂S while maintaining low foam potential in liquid-contacted zones, a balance addressed through surfactant package selection and inhibitor carrier design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Emulsion Resolution -->
+        <div class="accordion-item">
+          <button class="accordion-trigger w-full flex items-center justify-between py-7 text-left group" aria-expanded="false">
+            <div class="flex items-center gap-6">
+              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0">opacity</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-1 block">Emulsion Resolution</span>
+                <h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors duration-200">Demulsifier Chemistry</h3>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all duration-200 accordion-chevron flex-shrink-0 ml-6">expand_more</span>
+          </button>
+          <div class="accordion-panel hidden pb-12 pl-14 pr-8">
+            <div class="max-w-4xl space-y-6">
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Produced water emulsions are stabilized by naturally occurring surface-active species — resins, asphaltenes, naphthenic acids, and fines — that adsorb at the oil-water interface and form a mechanically resistant interfacial film. Breaking this film is a kinetic problem: demulsifiers must out-compete the native stabilizers for interfacial adsorption, then flocculate water droplets to promote coalescence and gravity separation.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Surfactant-based demulsifiers reduce oil-water interfacial tension and alter droplet surface wettability toward the hydrophilic, which promotes droplet mobility and coalescence. Selection between water-partitioning and oil-partitioning formulations depends on the continuous phase and the nature of the stabilizing film — asphaltene-stabilized emulsions typically require different polar anchor chemistry than emulsions stabilized primarily by resin or wax films. Temperature, water cut, crude API gravity, and brine salinity all shift the optimal HLB (hydrophile-lipophile balance) of the effective demulsifier, which is why a single chemistry rarely performs across a portfolio of crude types.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Scale Inhibition -->
+        <div class="accordion-item">
+          <button class="accordion-trigger w-full flex items-center justify-between py-7 text-left group" aria-expanded="false">
+            <div class="flex items-center gap-6">
+              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0">layers</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-1 block">Scale Inhibition</span>
+                <h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors duration-200">Phosphonate &amp; Polymer Chemistry</h3>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all duration-200 accordion-chevron flex-shrink-0 ml-6">expand_more</span>
+          </button>
+          <div class="accordion-panel hidden pb-12 pl-14 pr-8">
+            <div class="max-w-4xl space-y-6">
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Scale forms when produced brine becomes supersaturated with respect to sparingly soluble mineral species — most commonly CaCO₃, CaSO₄, BaSO₄, SrSO₄, FeCO₃, and iron sulfides — as a result of pressure drop, temperature change, or commingling of incompatible waters (e.g., high-calcium formation brine mixing with high-sulfate injection water). Nucleation precedes crystal growth; inhibitor programs target both steps.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Phosphonate scale inhibitors work by threshold inhibition and crystal modification. At sub-stoichiometric concentrations — far below what would be needed to complex all the scaling ions — they adsorb onto active crystal growth sites, blocking lattice extension and distorting crystal morphology. This delays nucleation and slows growth kinetics, giving the fluid time to reach the separator before scale forms. Co-polymer scale inhibitors (polycarboxylates, polyacrylates, phosphino-polycarboxylates) extend inhibitor performance at elevated temperature and in high-calcium environments where phosphonate performance degrades due to calcium salt precipitation. Axerra's iron sulfide dissolvers address the particularly intractable problem of FeS scale: phosphonium-based chemistry targets the FeS crystal lattice directly, with winterized formulations maintaining fluidity and reactivity at Canadian ambient operating temperatures down to −40°C.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Pipeline Corrosion -->
+        <div class="accordion-item">
+          <button class="accordion-trigger w-full flex items-center justify-between py-7 text-left group" aria-expanded="false">
+            <div class="flex items-center gap-6">
+              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0">cable</span>
+              <div>
+                <span class="font-label text-xs uppercase tracking-widest text-outline mb-1 block">Pipeline Integrity</span>
+                <h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors duration-200">Pipeline Corrosion Inhibition: Film-Forming Chemistry</h3>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all duration-200 accordion-chevron flex-shrink-0 ml-6">expand_more</span>
+          </button>
+          <div class="accordion-panel hidden pb-12 pl-14 pr-8">
+            <div class="max-w-4xl space-y-6">
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                In CO₂- and H₂S-bearing production streams, the primary corrosion mechanism on carbon steel is electrochemical: CO₂ dissolves in produced water to form carbonic acid (H₂CO₃), which dissociates and drives anodic iron dissolution. H₂S introduces a parallel sulfidic corrosion pathway and the additional risk of hydrogen embrittlement and sulfide stress cracking in high-strength steels.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Film-forming corrosion inhibitors work by adsorbing onto the steel surface to create an impeding molecular film at the solid-liquid interface. Most oilfield filming inhibitors are nitrogen-containing heterocyclics — imidazolines, quaternary ammonium compounds, and pyridinium derivatives — whose lone-pair nitrogen atoms form coordination bonds with iron surface sites. The hydrophobic hydrocarbon tail of the molecule then orients away from the metal, presenting a non-polar barrier to the aqueous corrosive phase. Film quality — density, coverage, and persistence under turbulent flow — is a function of molecular structure, particularly tail length and the presence of additional anchor groups (sulfur, oxygen) that provide secondary adsorption interactions.
+              </p>
+              <p class="font-body text-on-surface-variant italic leading-relaxed">
+                Batch vs. continuous injection strategies are selected based on well architecture and flow regime. Weighted formulations are used where high water columns must be penetrated to reach the steel surface at depth. Non-emulsifying variants are specified for water-gathering systems where demulsifier compatibility is a constraint. In high-temperature gas wells and refinery applications, Axerra deploys thermally stable filming chemistries rated to conditions where conventional imidazolines decompose.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /accordion -->
+    </div>
+  </section>
+
+  <script>
+    window.Axerra = window.Axerra || {};
+
+    Axerra.accordion = (function () {
+      function init() {
+        var triggers = document.querySelectorAll('.accordion-trigger');
+        triggers.forEach(function (trigger) {
+          trigger.addEventListener('click', function () {
+            var panel   = this.nextElementSibling;
+            var chevron = this.querySelector('.accordion-chevron');
+            var isOpen  = this.getAttribute('aria-expanded') === 'true';
+            triggers.forEach(function (t) {
+              t.setAttribute('aria-expanded', 'false');
+              t.nextElementSibling.classList.add('hidden');
+              t.querySelector('.accordion-chevron').style.transform = '';
+            });
+            if (!isOpen) {
+              this.setAttribute('aria-expanded', 'true');
+              panel.classList.remove('hidden');
+              chevron.style.transform = 'rotate(180deg)';
+            }
+          });
+        });
+      }
+
+      return { init: init };
+    }());
+
+    Axerra.accordion.init();
+  </script>
+
+  <!-- ===== FLOW ASSURANCE AND PRODUCTION CHEMISTRY ===== -->
+  <section class="py-28 bg-surface overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-16">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Flow Assurance &amp; Production Chemistry</span>
+        </div>
+        <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6">Managing the Asphaltene–Wax–Viscosity Nexus.</h2>
+        <p class="font-body text-xl text-on-surface-variant italic leading-relaxed max-w-3xl">
+          In heavy-oil and high-asphaltene systems, flow assurance challenges are rarely driven by wax, asphaltenes, or viscosity alone — but by their interaction under dynamic thermal and pressure conditions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+
+        <!-- Challenge cards -->
+        <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-surface-container-low p-8 hover:bg-surface-container transition-colors group">
+            <span class="material-symbols-outlined text-primary mb-4 block text-2xl">thermostat</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Paraffin Crystallization</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Paraffin crystallization and deposition along the wellbore and surface flowlines.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 hover:bg-surface-container transition-colors group">
+            <span class="material-symbols-outlined text-primary mb-4 block text-2xl">science</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Asphaltene Nucleation</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Asphaltene-driven nucleation effects that accelerate deposition under pressure drawdown conditions.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 hover:bg-surface-container transition-colors group">
+            <span class="material-symbols-outlined text-primary mb-4 block text-2xl">waves</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Gelation &amp; Viscosity</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Gelation and viscosity escalation under cooling and pressure drawdown — restricting flow and increasing lift costs.</p>
+          </div>
+
+          <!-- Prevention statement -->
+          <div class="md:col-span-3 bg-surface-container p-8 border-l-4 border-primary">
+            <p class="font-body text-lg text-on-surface italic leading-relaxed">
+              These systems are engineered not just to treat deposits, but to <strong class="text-primary not-italic">prevent their formation</strong> through controlled crystallization and dispersion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Prevention vs remediation -->
+        <div class="lg:col-span-5 flex flex-col gap-5">
+          <div class="bg-surface-container-high p-10 border-t-2 border-tertiary flex-1">
+            <span class="material-symbols-outlined text-tertiary mb-4 block text-3xl">block</span>
+            <h3 class="font-headline text-xl font-bold mb-4">Prevention Over Remediation</h3>
+            <p class="font-body text-on-surface-variant italic leading-relaxed mb-6">
+              Axerra emphasizes proactive, continuous chemical strategies where feasible, reducing reliance on reactive mechanical intervention.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-outline flex-shrink-0"></span>
+                <span class="font-label text-xs text-on-surface-variant line-through">Hot oiling and thermal remediation</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-outline flex-shrink-0"></span>
+                <span class="font-label text-xs text-on-surface-variant line-through">Mechanical scraping and pigging</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-outline flex-shrink-0"></span>
+                <span class="font-label text-xs text-on-surface-variant line-through">Repetitive workover cycles</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-lowest p-8 ghost-border">
+            <p class="font-label text-sm text-on-surface-variant leading-relaxed">
+              When combined with mechanical or thermal methods, Axerra's chemistry ensures deposits remain <strong class="text-on-surface">softer, less adhesive, and easier to manage</strong> — lowering intervention frequency and cost.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVOIR-SPECIFIC CHEMICAL ENGINEERING ===== -->
+  <section class="py-28 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <div>
+          <div class="flex items-center space-x-3 mb-3">
+            <span class="w-8 h-px bg-primary"></span>
+            <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Reservoir-Specific Engineering</span>
+          </div>
+          <h2 class="font-headline text-4xl font-bold tracking-tight mb-6">Formulated for Your Reservoir. Not for a Catalog.</h2>
+          <p class="font-body text-lg text-on-surface-variant italic leading-relaxed mb-8">
+            Axerra products are formulated based on crude-specific and reservoir-specific variables. This enables formulations that remain effective in high-temperature, high-salinity, and thermally cycled environments where conventional inhibitors often fail.
+          </p>
+          <div class="relative overflow-hidden" style="height:220px;">
+            <img
+              src="assets/images/Reservoir%201.png"
+              alt="Subsurface reservoir geology"
+              class="w-full h-full object-cover opacity-60 hover:opacity-95 transition-all duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#151c23]/80 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-surface-container p-7 ghost-border flex items-start gap-5 hover:bg-surface-container-high transition-colors">
+            <span class="font-headline text-primary font-black text-2xl flex-shrink-0">01</span>
+            <div>
+              <h4 class="font-headline font-bold text-sm uppercase mb-2">Carbon-Number Distribution</h4>
+              <p class="font-label text-xs text-on-surface-variant leading-relaxed">Carbon-number distribution of wax fractions — governing paraffin onset temperature and treatment selectivity.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container p-7 ghost-border flex items-start gap-5 hover:bg-surface-container-high transition-colors">
+            <span class="font-headline text-primary font-black text-2xl flex-shrink-0">02</span>
+            <div>
+              <h4 class="font-headline font-bold text-sm uppercase mb-2">Asphaltene &amp; Resin Content</h4>
+              <p class="font-label text-xs text-on-surface-variant leading-relaxed">Asphaltene and resin content defining colloidal stability and the risk profile for nucleation-driven deposition.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container p-7 ghost-border flex items-start gap-5 hover:bg-surface-container-high transition-colors">
+            <span class="font-headline text-primary font-black text-2xl flex-shrink-0">03</span>
+            <div>
+              <h4 class="font-headline font-bold text-sm uppercase mb-2">Temperature &amp; Pressure Profiles</h4>
+              <p class="font-label text-xs text-on-surface-variant leading-relaxed">Temperature and pressure profiles along the wellbore — ensuring thermal stability throughout the production system.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container p-7 ghost-border flex items-start gap-5 hover:bg-surface-container-high transition-colors">
+            <span class="font-headline text-primary font-black text-2xl flex-shrink-0">04</span>
+            <div>
+              <h4 class="font-headline font-bold text-sm uppercase mb-2">Salinity, Water Cut &amp; Brine Chemistry</h4>
+              <p class="font-label text-xs text-on-surface-variant leading-relaxed">Salinity, water cut, and brine chemistry governing surfactant phase behavior and compatibility with formation water.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVALUATION AND VALIDATION FRAMEWORK ===== -->
+  <section class="py-28 bg-surface">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+        <div class="lg:col-span-5">
+          <div class="flex items-center space-x-3 mb-3">
+            <span class="w-8 h-px bg-primary"></span>
+            <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Evaluation &amp; Validation Framework</span>
+          </div>
+          <h2 class="font-headline text-4xl font-bold tracking-tight mb-6">Chemistry Selected to Match the Reservoir — Not the Catalog.</h2>
+          <p class="font-body text-lg text-on-surface-variant italic leading-relaxed mb-6">
+            Axerra products are never deployed without rigorous evaluation. Selection and optimization are grounded in laboratory and field-representative testing.
+          </p>
+          <p class="font-label text-sm text-on-surface-variant leading-relaxed border-l-2 border-primary pl-4">
+            This disciplined approach ensures laboratory performance translates reliably to field outcomes — eliminating the gap between screening and production.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="bg-surface-container-low p-8 group hover:bg-surface-container transition-colors">
+            <span class="material-symbols-outlined text-primary mb-5 block text-2xl">filter_alt</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Crude-Specific Screening</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Beyond bulk gravimetric methods — evaluating chemical performance against the actual crude composition and asphaltene character of your field.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 group hover:bg-surface-container transition-colors">
+            <span class="material-symbols-outlined text-primary mb-5 block text-2xl">linear_scale</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Carbon-Chain Validation</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Performance validation at the carbon-chain level — ensuring treatment efficacy across the full wax fraction distribution.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 group hover:bg-surface-container transition-colors">
+            <span class="material-symbols-outlined text-primary mb-5 block text-2xl">verified</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Compatibility Verification</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Verification with metallurgy, brines, and co-injected chemistries — confirming zero adverse interactions in the full production system.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 group hover:bg-surface-container transition-colors">
+            <span class="material-symbols-outlined text-primary mb-5 block text-2xl">compress</span>
+            <h4 class="font-headline font-bold text-sm uppercase mb-3">Live-Fluid Testing</h4>
+            <p class="font-label text-xs text-on-surface-variant leading-relaxed">Live-fluid and pressure-conditioned testing where required — replicating bottomhole conditions to close the lab-to-field gap.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTEGRATED DEPLOYMENT MODEL ===== -->
+  <section class="py-28 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-16">
+        <div class="flex items-center space-x-3 mb-3">
+          <span class="w-8 h-px bg-primary"></span>
+          <span class="font-label text-xs tracking-widest uppercase text-primary font-bold">Integrated Deployment Model</span>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8">
+          <h2 class="font-headline text-4xl font-bold tracking-tight max-w-xl">From Screening to Long-Term Performance.</h2>
+          <p class="font-body text-on-surface-variant italic text-sm max-w-sm leading-relaxed">
+            A closed-loop model that allows chemistry programs to evolve with the reservoir — maintaining effectiveness as conditions change over time.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5-step process -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-0 border border-outline-variant/10">
+        <div class="p-8 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors group flex flex-col">
+          <span class="font-headline text-primary font-bold text-xl mb-6 block">01</span>
+          <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors mb-6 text-2xl">manage_search</span>
+          <h4 class="font-headline font-bold text-xs uppercase mb-3">Asset Screening &amp; Data Review</h4>
+          <p class="font-label text-xs text-on-surface-variant leading-relaxed">Comprehensive review of production history, reservoir data, and existing chemistry programs.</p>
+        </div>
+        <div class="p-8 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors group flex flex-col">
+          <span class="font-headline text-primary font-bold text-xl mb-6 block">02</span>
+          <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors mb-6 text-2xl">colorize</span>
+          <h4 class="font-headline font-bold text-xs uppercase mb-3">Fluid Sampling &amp; Characterization</h4>
+          <p class="font-label text-xs text-on-surface-variant leading-relaxed">Crude-specific and brine analysis establishing the baseline chemistry of your reservoir system.</p>
+        </div>
+        <div class="p-8 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors group flex flex-col">
+          <span class="font-headline text-primary font-bold text-xl mb-6 block">03</span>
+          <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors mb-6 text-2xl">biotech</span>
+          <h4 class="font-headline font-bold text-xs uppercase mb-3">Laboratory Optimization &amp; Validation</h4>
+          <p class="font-label text-xs text-on-surface-variant leading-relaxed">Rigorous screening and performance confirmation under conditions representative of your field.</p>
+        </div>
+        <div class="p-8 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors group flex flex-col">
+          <span class="font-headline text-primary font-bold text-xl mb-6 block">04</span>
+          <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors mb-6 text-2xl">settings_input_component</span>
+          <h4 class="font-headline font-bold text-xs uppercase mb-3">Customized Injection &amp; Treatment Design</h4>
+          <p class="font-label text-xs text-on-surface-variant leading-relaxed">Injection protocols, dosing rates, and operational procedures tailored to your infrastructure.</p>
+        </div>
+        <div class="p-8 hover:bg-surface-container-low transition-colors group flex flex-col">
+          <span class="font-headline text-primary font-bold text-xl mb-6 block">05</span>
+          <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors mb-6 text-2xl">monitoring</span>
+          <h4 class="font-headline font-bold text-xs uppercase mb-3">Performance Monitoring &amp; Optimization</h4>
+          <p class="font-label text-xs text-on-surface-variant leading-relaxed">Post-deployment surveillance and continuous optimization as reservoir conditions evolve.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="py-20 bg-primary-container relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+      <div>
+        <h2 class="font-headline text-3xl md:text-4xl font-black text-on-primary-container tracking-tighter mb-3">
+          Ready to engineer your reservoir solution?
+        </h2>
+        <p class="font-label text-on-primary-container/80 max-w-xl">Consult with our lead chemical engineers to evaluate your field's specific constraints and opportunities.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 flex-shrink-0">
+        <a href="contact.html" class="bg-surface text-primary font-headline font-black px-10 py-5 rounded-sm uppercase tracking-widest hover:scale-105 transition-transform text-center">
+          Contact Us
+        </a>
+        <a href="How_We_Engage.html" class="border border-on-primary-container/30 text-on-primary-container font-headline font-bold px-8 py-5 rounded-sm uppercase tracking-widest hover:bg-on-primary-container/10 transition-all text-center text-xs">
+          How We Engage
+        </a>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-80 h-80 bg-primary/15 blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#080f15] w-full py-16 px-8 border-t border-slate-800/20">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+
+    <div class="col-span-1">
+      <img src="assets/images/axerra_logo_website.png" alt="Axerra" class="h-9 w-auto mb-5 opacity-80" style="mix-blend-mode:screen;filter:invert(1);"/>
+      <p class="font-body italic text-base text-slate-500 leading-relaxed">Precision Engineering for Subsurface Excellence.</p>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Navigation</h5>
+      <a href="index.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">What We Do</a>
+      <a href="Our_Products.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Products</a>
+      <a href="Our_Clients.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Our Clients</a>
+      <a href="How_We_Engage.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">How We Engage</a>
+      <a href="value.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Value</a>
+      <a href="insights.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Insights</a>
+      <a href="about.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">About</a>
+    </div>
+
+    <div class="space-y-3">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Legal &amp; Location</h5>
+      <a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">New York, NY HQ</a>
+      <a href="privacy.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Privacy Policy</a>
+      <a href="terms.html" class="block font-label text-sm text-slate-500 hover:text-slate-200 transition-all">Terms of Service</a>
+    </div>
+
+    <div class="space-y-4">
+      <h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4">Connect</h5>
+      <a href="contact.html" class="block w-full py-3 text-center signature-gradient font-headline text-xs font-bold uppercase tracking-widest text-on-primary hover:brightness-110 transition-all">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body italic text-sm text-slate-600">© 2026 Axerra LLC. All rights reserved.</p>
+    <div class="flex gap-6">
+      <a href="about.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">About</a>
+      <a href="contact.html" class="font-label text-xs text-slate-600 hover:text-slate-400 transition-colors uppercase tracking-widest">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

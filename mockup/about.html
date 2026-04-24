@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About — Axerra Chemical</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary":"#00daf8","primary-container":"#007d8f","on-primary":"#00363f","surface":"#0d141a","surface-container":"#192027","surface-container-low":"#151c23","surface-container-high":"#242b31","surface-container-highest":"#2f363c","surface-container-lowest":"#080f15","on-surface":"#dce3ec","on-surface-variant":"#bfc7d1","outline":"#8a919b","outline-variant":"#404850","tertiary":"#ffba38","secondary":"#adcbda"},fontFamily:{"headline":["Manrope"],"body":["Newsreader"],"label":["Inter"]}}}}</script>
+<style>
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;line-height:1;}
+  .ghost-border{border:1px solid rgba(64,72,80,0.18);}
+</style>
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-primary/30">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50" style="background:rgba(13,20,26,0.72);backdrop-filter:blur(20px);">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/logo-axerra.jpg" alt="Axerra" class="h-10 w-auto" style="mix-blend-mode:screen;filter:invert(1);"/>
+      <span style="display:none;font-family:'Manrope',sans-serif;font-weight:900;font-size:1.3rem;color:#fff;">AXERRA</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors" style="font-family:'Manrope',sans-serif;">What We Do</a>
+      <div class="relative group">
+        <a href="solutions.html" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors" style="font-family:'Manrope',sans-serif;">Solutions<svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></a>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="solutions.html#products" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23]">Our Products</a>
+          <a href="solutions.html#engage" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23]">How We Engage</a>
+        </div>
+      </div>
+      <a href="value.html" class="font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors" style="font-family:'Manrope',sans-serif;">Value</a>
+      <div class="relative group">
+        <a href="insights.html" class="flex items-center gap-1 font-headline tracking-tight font-bold text-xs uppercase text-slate-300 hover:text-cyan-300 transition-colors" style="font-family:'Manrope',sans-serif;">Insights<svg class="w-3 h-3 mt-0.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="square" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></a>
+        <div class="absolute top-full left-0 mt-2 w-52 bg-[#0d141a] border border-[#404850]/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <a href="whitepaper.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23]">White Paper</a>
+          <a href="insights-detail.html" class="block px-5 py-3 text-xs font-label uppercase tracking-widest text-slate-400 hover:text-cyan-300 hover:bg-[#151c23]">Technical Insights</a>
+        </div>
+      </div>
+      <a href="about.html" class="font-headline tracking-tight font-bold text-xs uppercase text-cyan-400 border-b-2 border-cyan-400 pb-0.5" style="font-family:'Manrope',sans-serif;">About</a>
+    </div>
+    <a href="contact.html" class="bg-gradient-to-br from-[#00daf8] to-[#007d8f] text-[#00363f] font-bold text-xs uppercase tracking-wider px-6 py-2.5 hover:brightness-110 transition-all" style="font-family:'Manrope',sans-serif;">Contact Us</a>
+  </div>
+</nav>
+
+<main class="pt-24">
+
+<!-- HERO -->
+<section class="relative overflow-hidden min-h-[480px] flex items-center">
+  <div class="absolute inset-0">
+    <img class="w-full h-full object-cover opacity-20" src="assets/brand-piping.png" alt="Axerra operations"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0d141a] via-[#0d141a]/85 to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-8 py-24">
+    <p class="font-label text-xs uppercase tracking-widest text-primary mb-4">About Axerra</p>
+    <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface max-w-3xl mb-6" style="font-family:'Manrope',sans-serif;">
+      Engineered for the Harshest Environments.
+    </h1>
+    <p class="font-body text-xl text-on-surface-variant italic max-w-2xl leading-relaxed" style="font-family:'Newsreader',serif;">
+      Axerra Chemical is a specialty chemical engineering company focused entirely on enhanced oil recovery. We exist to maximize the productive life of the world's existing hydrocarbon assets.
+    </p>
+  </div>
+</section>
+
+<!-- MISSION STATEMENT -->
+<section class="py-24 px-8 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="font-label text-xs uppercase tracking-widest text-primary mb-4">Our Mission</p>
+      <h2 class="font-headline text-4xl font-bold tracking-tight mb-6" style="font-family:'Manrope',sans-serif;">Unlocking What Is Already There.</h2>
+      <p class="font-body text-xl text-on-surface-variant italic leading-relaxed mb-6" style="font-family:'Newsreader',serif;">
+        The world produces approximately 30 billion barrels of oil per year, yet leaves 60–70% of reserves in the ground. Axerra was founded on one conviction: that precision chemistry can close that gap — field by field, reservoir by reservoir.
+      </p>
+      <p class="font-body text-xl text-on-surface-variant italic leading-relaxed" style="font-family:'Newsreader',serif;">
+        We don't sell commodity chemicals. We engineer bespoke molecular solutions for specific subsurface environments, and we remain committed partners through every phase of deployment — from the laboratory bench to full-field production.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-surface-container p-8 ghost-border">
+        <div class="font-headline text-4xl font-black text-primary mb-2" style="font-family:'Manrope',sans-serif;">2014</div>
+        <div class="font-label text-xs uppercase tracking-widest text-outline">Founded</div>
+      </div>
+      <div class="bg-surface-container p-8 ghost-border">
+        <div class="font-headline text-4xl font-black text-primary mb-2" style="font-family:'Manrope',sans-serif;">15+</div>
+        <div class="font-label text-xs uppercase tracking-widest text-outline">Active Field Programs</div>
+      </div>
+      <div class="bg-surface-container p-8 ghost-border">
+        <div class="font-headline text-4xl font-black text-primary mb-2" style="font-family:'Manrope',sans-serif;">9</div>
+        <div class="font-label text-xs uppercase tracking-widest text-outline">Countries Operated</div>
+      </div>
+      <div class="bg-surface-container p-8 ghost-border">
+        <div class="font-headline text-4xl font-black text-primary mb-2" style="font-family:'Manrope',sans-serif;">120+</div>
+        <div class="font-label text-xs uppercase tracking-widest text-outline">Technical Staff</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT SETS US APART -->
+<section class="py-24 px-8 bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-14 max-w-2xl">
+      <p class="font-label text-xs uppercase tracking-widest text-primary mb-3">Differentiation</p>
+      <h2 class="font-headline text-4xl font-bold tracking-tight" style="font-family:'Manrope',sans-serif;">What Sets Axerra Apart</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/10">
+      <div class="p-10 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors">
+        <div class="w-10 h-10 bg-primary/10 flex items-center justify-center mb-6"><span class="material-symbols-outlined text-primary">science</span></div>
+        <h4 class="font-headline font-bold text-lg mb-3 uppercase tracking-tight" style="font-family:'Manrope',sans-serif;">Molecular-First Design</h4>
+        <p class="font-label text-sm text-on-surface-variant leading-relaxed">Every formulation begins with pore-scale science. We characterize your specific crude, brine, and rock before designing any chemistry. Nothing is off-the-shelf.</p>
+      </div>
+      <div class="p-10 border-r border-outline-variant/10 hover:bg-surface-container-low transition-colors bg-surface-container-low">
+        <div class="w-10 h-10 bg-primary/10 flex items-center justify-center mb-6"><span class="material-symbols-outlined text-primary">groups</span></div>
+        <h4 class="font-headline font-bold text-lg mb-3 uppercase tracking-tight" style="font-family:'Manrope',sans-serif;">Embedded Partnership</h4>
+        <p class="font-label text-sm text-on-surface-variant leading-relaxed">Axerra engineers embed in your asset team. We share the technical risk, remain on-site through pilots, and stay engaged across the full production life cycle.</p>
+      </div>
+      <div class="p-10 hover:bg-surface-container-low transition-colors">
+        <div class="w-10 h-10 bg-primary/10 flex items-center justify-center mb-6"><span class="material-symbols-outlined text-primary">verified</span></div>
+        <h4 class="font-headline font-bold text-lg mb-3 uppercase tracking-tight" style="font-family:'Manrope',sans-serif;">Independent Verification</h4>
+        <p class="font-label text-sm text-on-surface-variant leading-relaxed">All performance claims are substantiated by third-party core flood data, independent lab certification, and field production surveillance — not vendor models.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="py-24 px-8 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-14">
+      <p class="font-label text-xs uppercase tracking-widest text-primary mb-3">Leadership</p>
+      <h2 class="font-headline text-4xl font-bold tracking-tight" style="font-family:'Manrope',sans-serif;">Technical Leadership Team</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div class="bg-surface-container-low p-8 ghost-border">
+        <div class="w-16 h-16 bg-surface-container-high mb-5 flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-outline text-3xl" style="font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz' 48;">person</span>
+        </div>
+        <h4 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Dr. James Okafor</h4>
+        <p class="font-label text-xs text-primary uppercase tracking-widest mb-3">Chief Executive Officer</p>
+        <p class="font-label text-xs text-on-surface-variant leading-relaxed">25 years in EOR chemistry. Former SPE Distinguished Lecturer. PhD, Chemical Engineering, Imperial College London.</p>
+      </div>
+      <div class="bg-surface-container-low p-8 ghost-border">
+        <div class="w-16 h-16 bg-surface-container-high mb-5 flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-outline text-3xl" style="font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz' 48;">person</span>
+        </div>
+        <h4 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Dr. Priya Vasquez</h4>
+        <p class="font-label text-xs text-primary uppercase tracking-widest mb-3">Chief Scientific Officer</p>
+        <p class="font-label text-xs text-on-surface-variant leading-relaxed">Surfactant and polymer synthesis specialist. 18 patents in EOR chemistry. PhD, Physical Chemistry, UT Austin.</p>
+      </div>
+      <div class="bg-surface-container-low p-8 ghost-border">
+        <div class="w-16 h-16 bg-surface-container-high mb-5 flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-outline text-3xl" style="font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz' 48;">person</span>
+        </div>
+        <h4 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Marcus Lindqvist</h4>
+        <p class="font-label text-xs text-primary uppercase tracking-widest mb-3">VP Field Operations</p>
+        <p class="font-label text-xs text-on-surface-variant leading-relaxed">20 years of chemical injection operations across Middle East, West Africa, and North Sea assets. MSc, Petroleum Engineering, Heriot-Watt.</p>
+      </div>
+      <div class="bg-surface-container-low p-8 ghost-border">
+        <div class="w-16 h-16 bg-surface-container-high mb-5 flex items-center justify-center ghost-border">
+          <span class="material-symbols-outlined text-outline text-3xl" style="font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz' 48;">person</span>
+        </div>
+        <h4 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Sarah Al-Rashidi</h4>
+        <p class="font-label text-xs text-primary uppercase tracking-widest mb-3">VP Reservoir Science</p>
+        <p class="font-label text-xs text-on-surface-variant leading-relaxed">Carbonate reservoir characterization and wettability specialist. 15 peer-reviewed publications. PhD, Geochemistry, Stanford.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="py-24 px-8 bg-surface">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <div>
+      <p class="font-label text-xs uppercase tracking-widest text-primary mb-3">Locations</p>
+      <h2 class="font-headline text-4xl font-bold tracking-tight mb-8" style="font-family:'Manrope',sans-serif;">Global Reach. Local Expertise.</h2>
+      <div class="space-y-6">
+        <div class="flex items-start gap-5 border-b border-outline-variant/20 pb-6">
+          <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+          <div>
+            <h5 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Houston, Texas — Global HQ</h5>
+            <p class="font-label text-sm text-on-surface-variant">Research, corporate, and North America operations. ISO 9001 certified laboratory facilities. 1 Shell Plaza, Suite 4400.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-b border-outline-variant/20 pb-6">
+          <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+          <div>
+            <h5 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Abu Dhabi, UAE — Middle East Office</h5>
+            <p class="font-label text-sm text-on-surface-variant">Technical and commercial operations for MENA region. Onshore and offshore carbonate EOR specialist team.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-b border-outline-variant/20 pb-6">
+          <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+          <div>
+            <h5 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Aberdeen, UK — North Sea Office</h5>
+            <p class="font-label text-sm text-on-surface-variant">Offshore EOR operations, HPHT formulation support, and regulatory interface for UKCS and Norwegian assets.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+          <div>
+            <h5 class="font-headline font-bold text-base mb-1" style="font-family:'Manrope',sans-serif;">Lagos, Nigeria — West Africa Office</h5>
+            <p class="font-label text-sm text-on-surface-variant">Heavy oil and deepwater EOR programs across Gulf of Guinea. Local supply chain and field engineering support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative" style="height:460px;">
+      <img src="assets/brand-geology.png" alt="Global operations" class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0d141a]/70 to-transparent pointer-events-none"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-primary-container relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+    <div>
+      <h2 class="font-headline text-3xl font-black text-on-primary-container tracking-tighter mb-2" style="font-family:'Manrope',sans-serif;">Work with Axerra.</h2>
+      <p class="font-label text-on-primary-container/80 max-w-xl">Whether you are evaluating a pilot program or looking for a long-term technical partner, our team is ready to engage.</p>
+    </div>
+    <a href="contact.html" class="bg-[#0d141a] text-primary font-headline font-black px-10 py-5 uppercase tracking-widest hover:scale-105 transition-transform flex-shrink-0" style="font-family:'Manrope',sans-serif;">Contact Our Team</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#080f15] w-full py-16 px-8 border-t border-slate-800/20">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+    <div><img src="assets/logo-axerra.jpg" alt="Axerra" class="h-9 w-auto mb-5 opacity-80"/><p class="font-body italic text-base text-slate-500" style="font-family:'Newsreader',serif;">Precision Engineering for Subsurface Excellence.</p></div>
+    <div class="space-y-3"><h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4" style="font-family:'Manrope',sans-serif;">Navigation</h5><a href="index.html" class="block font-label text-sm text-slate-500 hover:text-slate-200">What We Do</a><a href="solutions.html" class="block font-label text-sm text-slate-500 hover:text-slate-200">Solutions</a><a href="value.html" class="block font-label text-sm text-slate-500 hover:text-slate-200">Value</a><a href="insights.html" class="block font-label text-sm text-slate-500 hover:text-slate-200">Insights</a><a href="about.html" class="block font-label text-sm text-slate-500 hover:text-slate-200">About</a></div>
+    <div class="space-y-3"><h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4" style="font-family:'Manrope',sans-serif;">Legal</h5><a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200">Privacy Policy</a><a href="#" class="block font-label text-sm text-slate-500 hover:text-slate-200">Terms of Service</a></div>
+    <div><h5 class="font-headline text-xs font-bold uppercase tracking-widest text-cyan-500 mb-4" style="font-family:'Manrope',sans-serif;">Connect</h5><a href="contact.html" class="block w-full py-3 text-center bg-gradient-to-br from-[#00daf8] to-[#007d8f] font-headline text-xs font-bold uppercase tracking-widest text-[#00363f] hover:brightness-110 transition-all" style="font-family:'Manrope',sans-serif;">Contact Us</a></div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-14 pt-8 border-t border-slate-800/20"><p class="font-body italic text-sm text-slate-600" style="font-family:'Newsreader',serif;">© 2026 Axerra LLC. All rights reserved.</p></div>
+</footer>
+</body>
+</html>
